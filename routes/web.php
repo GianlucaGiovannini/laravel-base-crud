@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'PageController@index')->name('home');
+
+/*  rotte per CRUD */
+Route::get('/comics', 'ComicsController@index')->name('comics.index');
+Route::get('/comics/create', 'ComicsController@create')->name('comics.create');
+Route::post('/comics/create', 'ComicsController@store')->name('comics.store');
+
+Route::get('/comics/{comics}', 'ComicsController@show')->name('comics.show');

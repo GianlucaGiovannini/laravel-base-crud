@@ -1,2 +1,28 @@
 //
 @use 'bootstrap';
+.img_home {
+    width: 80%;
+    object-fit: cover;
+    object-position: top;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+}
+
+main {
+    width: 100vw;
+    height: 83vh;
+    overflow: auto;
+}
+
+footer {
+    width: 100vw;
+    height: 7vh;
+}

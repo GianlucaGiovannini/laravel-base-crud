@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark text-white">
     @include('partials.header')
 
     <main class="py-3">
