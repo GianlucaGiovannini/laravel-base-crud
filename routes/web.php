@@ -16,8 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PageController@index')->name('home');
 
 /*  rotte per CRUD */
-Route::get('/comics', 'ComicsController@index')->name('comics.index');
+/* Route::get('/comics', 'ComicsController@index')->name('comics.index');
 Route::get('/comics/create', 'ComicsController@create')->name('comics.create');
 Route::post('/comics/create', 'ComicsController@store')->name('comics.store');
-
 Route::get('/comics/{comics}', 'ComicsController@show')->name('comics.show');
+Route::get('/comics/{comic}/edit', 'ComicsController@edit')->name('comics.edit');
+Route::put('/comics/{comic}', 'ComicsController@update')->name('comics.update');
+Route::delete('/comics/{comic}', 'ComicsController@destroy')->name('comics.destroy'); */
+
+/* METODO VELOCE */
+Route::resource('/comics', 'ComicsController');
